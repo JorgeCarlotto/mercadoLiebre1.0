@@ -1,0 +1,55 @@
+header{
+    background-color: #eac926;
+}
+
+.centrado{
+    text-align: center;
+}
+
+.titular{
+    font-size: 24px;
+}
+
+.textos{
+    font-size: 16px;
+}
+
+.precios{
+    font-size: 18px;
+}
+
+.elementoLista{
+    text-decoration: none;
+}
+
+.fa-bars{
+    background-color:#03264C;
+    font-size: 20px;
+    color: white;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 6px;
+}
+
+footer{
+    text-align: center;
+}
+
+.fa-credit-card{
+    font-size: 60px;
+    color:#1259c3 ;
+}
+
+.fa-gift{
+    font-size: 60px;
+    color:#1259c3 ;
+}
+
+.fa-user-shield{
+    font-size: 60px;
+    color:#1259c3 ;
+}
