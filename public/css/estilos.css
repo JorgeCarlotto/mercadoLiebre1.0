@@ -1,10 +1,24 @@
-header{
-    background-color: #eac926;
+*{ 
+    margin : 0px;
+    padding: 0px;
 }
 
-.centrado{
-    text-align: center;
+body{
+    box-sizing: border-box;
+    font-family: 'Roboto',sans-serif;
+    font-size: 12px;
+    background-color: #ebebeb ;
 }
+
+p{
+    font-size: 12px;
+}
+
+h3{
+    font-size: 24px;
+}
+
+
 
 .titular{
     font-size: 24px;
@@ -14,42 +28,201 @@ header{
     font-size: 16px;
 }
 
-.precios{
-    font-size: 18px;
-}
+
 
 .elementoLista{
     text-decoration: none;
 }
 
-.fa-bars{
-    background-color:#03264C;
-    font-size: 20px;
-    color: white;
-    width: 30px;
-    height: 30px;
+/*Fin Global*/
+
+
+
+
+
+
+/* Inicio  Header*/
+
+header{
+    background-color: #eac926;
+
+}
+
+header p {
+    margin-top: 10px;
+}
+
+header nav {
+    font-size: 12px;
+    margin-top: 10px ;
+    display: none;
+}
+
+header ul {
+    margin-top: 10px ;
+}
+
+header ul li{
+    list-style-type: none;
+}
+
+header ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+.barraBusqueda {
     text-align: center;
-    padding-top: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
-    border-radius: 6px;
+}
+
+.centrado{
+    text-align: center;
+}
+
+.hamburgesaHeader {
+    text-align:  center;
+}
+.hamburgesaHeader i{
+    background-color:#1259c3;
+    color: white;
+    border-radius: 5px;
+    font-size: 20px;
+    margin: 10px 0px 20px 0px;
+    padding: 10px;
+
+}
+
+/*Fin de Header*/
+
+
+
+
+
+
+/* inicio MAIN*/
+
+main{
+    margin: 0 auto;
+    width: 90%;
+
+}
+
+
+
+main section article{
+    margin-top: 10px;
+    margin: auto;
+}
+
+.contenedorArticulo{   /* AGREGAR ESTA CLASE*/
+    border-top: 1px solid #ebebeb;
+    background-color: white;
+    width: 100%;
+}
+
+.camion{
+    color:#39b54a;
+    border-radius: 50%;
+    border:solid 1px #39b54a;
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+}
+
+.fa-truck-moving{
+    
+    margin: 4px;
+}
+
+
+.precios{
+    font-size: 18px;
+    text-align: left;
+    margin-top: 5px;
+}
+
+.textos{
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.descuentos{
+    color: #39b54a;
+}
+
+
+
+
+/* fin MAIN*/
+
+
+
+
+
+/*Inicio footer*/
+footer p{
+    text-align: center;
+    padding: 10px;
+}
+
+footer h2{
+    text-align: center;
+    padding: 10px;
 }
 
 footer{
-    text-align: center;
+    background-color: white;
+    margin-top: 20px;
 }
 
+
 .fa-credit-card{
-    font-size: 60px;
+    font-size: 2rem;
     color:#1259c3 ;
+    text-align: center;
+    margin-bottom: 10px;
 }
 
 .fa-gift{
-    font-size: 60px;
+    font-size: 2rem;
     color:#1259c3 ;
+    text-align: center;
+    margin-bottom: 10px;
+
 }
 
 .fa-user-shield{
-    font-size: 60px;
+    font-size: 2rem;
     color:#1259c3 ;
+    text-align: center;
+    margin-bottom: 10px;
+
+}
+
+.centerFooter{
+    text-align: center;
+}
+
+/*Fin  footer*/
+
+
+
+
+@media (min-width: 361px){
+    .textos {
+        display: block;
+    }
+
+main section article{
+    box-shadow: 0px 0px 10px rgb(100,100,100);
+}
+
+header nav{
+    display: block;
+}
+
+.hamburgesaHeader{
+    display: none;
+}
+
 }
