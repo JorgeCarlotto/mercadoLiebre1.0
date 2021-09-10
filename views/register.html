@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="/css/estilos.css">
-    <title>Mercado Liebre</title>
+    <title>Register</title>
     
 </head>
 <body>
@@ -40,78 +40,54 @@
 
 
    <main>
-        <section>
-            <h2 class="titular">Basado en tu última visita</h2>
-            <article>
-                <img src="images/img-cafetera-moulinex.jpg" width="100%">
-                
-                <div class="contenedorArticulo">
-                <div class="camion"><i class="fas fa-truck-moving"></i></div>
-                <p class="precios">$6.770</p>
-                <p class="descuentos">40% OFF</p>
-                <p class="textos">Cafetera Moulinex</p>
-                </div>
-            </article>
-            
-            <article>
-            <img src="images/img-macbook-pro-2019.jpg" width="100%">
-                <div class="contenedorArticulo">
-                <div class="camion"><i class="fas fa-truck-moving"></i></div>
-                <p class="precios">$230.00</p>
-                <p class="descuentos">20% OFF</p>
-                <p class="textos">MacBook Pro 2019</p>
-                </div>
-                </article>
-            <article>
-                <img src="images/img-samsung-galaxy-s10.jpg" width="100%">
-                <div class="contenedorArticulo">
-                <div class="camion"><i class="fas fa-truck-moving"></i></div>
-                <p class="precios">$70.500</p>
-                <p class="descuentos">10% OFF</p>
-                <p class="textos">Samsung Galaxy S10</p>
-                </div>
-            </article>
-            <article>
-            <img src="images/img-tv-samsung-smart.jpg" width="100%">
-            <div class="contenedorArticulo">
-            <div class="camion"><i class="fas fa-truck-moving"></i></div>
-            <p class="precios">$23.200</p>
-            <p class="descuentos">5% OFF</p>
-            <p class="textos">SmartTv Samsung 43</p>
-            </div>
-            </article>
-        </section>
-        <section>
-            
-            <h2 class="titular">Sección de Ofertas</h2>
-            <article>
-            <img src="images/img-cafetera-moulinex.jpg" width="100%">
-            <div class="contenedorArticulo">
-            <div class="camion"><i class="fas fa-truck-moving"></i></div>
-            <p class="precios">$6.770</p>
-            <p class="descuentos">40% OFF</p>
-            <p class="textos">Cafetera Moulinex</p>
-            </div>
-            </article>
-            <article>
-            <img src="images/img-macbook-pro-2019.jpg" width="100%">
-            <div class="contenedorArticulo">
-            <div class="camion"><i class="fas fa-truck-moving"></i></div>
-            <p class="precios">$230.00</p>
-            <p class="descuentos">20% OFF</p>
-            <p class="textos">MacBook Pro 2019</p>
-            </div>
-            </article>
-            <article>
-            <img src="images/img-samsung-galaxy-s10.jpg" width="100%">
-            <div class="contenedorArticulo">
-            <div class="camion"><i class="fas fa-truck-moving"></i></div>
-            <p class="precios">$70.500</p>
-            <p class="descuentos">10% OFF</p>
-            <p class="textos">Samsung Galaxy S10</p>
-            </div>
-            </article>
-        </section>
+        
+    <form action="asd" method="POST" class="formulario">
+
+        <label for="nombreApellido">Nombre y Apellido:</label>
+        <input type="text" id="nombreApellido" name="nombre" required>
+
+        <label for="nombreUsuario">Nombre de usuari@:</label>
+        <input type="text" id="nombreUsuario" name="usuario" required>
+
+        <label for="fechaNacimiento">Fecha de Nacimiento:</label>
+        <input type="date" id="fechaNacimiento" name="fechaNacimiento" value="2021-09-09" min="1900-01-01" max="2022-12-31" required>
+
+        <label for="domicilio">Domicilio:</label>
+        <input type="text" id="domicilio" name="domicilio" required>
+
+        <label for="PerfilUsuario">¿Quieres comprar o vender?</label><br>
+        <label><input id="PerfilUsuario" type="radio" name="PerfilUsuario" value="Comprar">Comprar</label><br>
+        <label><input id="PerfilUsuario" type="radio" name="PerfilUsuario" value="Vender">Vender</label><br>
+
+        <label for="CualesSonTusIntereses">¿Cuáles son tus intereses?</label><br>
+        <label><input id="CategoriaInteres" type="checkbox" name="interes" value="Electro"> Electro</label><br/>
+        <label><input id="CategoriaInteres" type="checkbox" name="interes" value="Moda">Moda</label><br/>
+        <label><input id="CategoriaInteres" type="checkbox" name="interes" value="Hogar">Hogar</label><br/>
+        <label><input id="CategoriaInteres" type="checkbox" name="interes" value="Juguetería">Juguetería</label><br/>
+        <label><input id="CategoriaInteres" type="checkbox" name="interes" value="Vida sana">Vida sana</label><br/>
+
+        
+
+        <label for="password">Contraseña:</label>
+        <input type="password" id="password" name="password" required>
+
+        <label for="password2">Confirmar Contraseña:</label>
+        <input type="password2" id="password2" name="password2" required>
+
+        <button type="submit">Volver Pagina Principal</button><br>
+
+        <button type="reset">Borrar Formulario</button>
+
+
+        
+
+
+
+    </form>
+
+
+
+
    </main>
    <footer>
         <section class="centerFooter">

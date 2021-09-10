@@ -1,7 +1,9 @@
 *{ 
     margin : 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
+
 
 body{
     box-sizing: border-box;
@@ -22,6 +24,7 @@ h3{
 
 .titular{
     font-size: 24px;
+    padding: 20px;
 }
 
 .textos{
@@ -45,11 +48,17 @@ h3{
 
 header{
     background-color: #eac926;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+
+    
 
 }
 
 header p {
     margin-top: 10px;
+    
 }
 
 header nav {
@@ -73,6 +82,7 @@ header ul li a{
 
 .barraBusqueda {
     text-align: center;
+   
 }
 
 .centrado{
@@ -104,6 +114,7 @@ header ul li a{
 main{
     margin: 0 auto;
     width: 90%;
+    
 
 }
 
@@ -112,42 +123,80 @@ main{
 main section article{
     margin-top: 10px;
     margin: auto;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    position: relative;
+    padding: 15px;
+    
 }
 
-.contenedorArticulo{   /* AGREGAR ESTA CLASE*/
+.contenedorArticulo{   
     border-top: 1px solid #ebebeb;
     background-color: white;
     width: 100%;
+    display: flex;
+    height: 100px;
+    flex-direction: column;
+    flex-wrap: wrap;
+   
+
+    
+    
+    
 }
+
+
+
+
+/* .camion{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+
+} */
 
 .camion{
     color:#39b54a;
     border-radius: 50%;
     border:solid 1px #39b54a;
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
     padding: 5px;
+    
 }
 
-.fa-truck-moving{
-    
-    margin: 4px;
-}
 
 
 .precios{
     font-size: 18px;
     text-align: left;
     margin-top: 5px;
+    display: flex;
+    
 }
 
 .textos{
+    display: flex;
+    margin-bottom: 10px;
     font-size: 16px;
-    margin-top: 5px;
+    
+
 }
 
 .descuentos{
     color: #39b54a;
+    display: flex;
+    
 }
 
 
@@ -204,6 +253,42 @@ footer{
 }
 
 /*Fin  footer*/
+
+
+
+
+/*-----------------Login html-----------------*/
+
+.formulario{
+    background-color: #ebebeb;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid black;
+
+}
+
+
+.formulario input{
+    display: block;
+}
+
+#CategoriaInteres{
+    display: inline-block;
+   
+}
+
+#PerfilUsuario{
+    display: inline-block;
+}
+
+
+
+
+
+
 
 
 
