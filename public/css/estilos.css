@@ -285,6 +285,19 @@ footer{
 }
 
 
+/*----------------- CSS LOGIN----------------------------*/
+
+.login{
+    background-color: #ebebeb;
+}
+
+.login input{
+    display: block;
+}
+
+
+
+
 
 
 
