@@ -1,99 +1,99 @@
-*{ 
-    margin : 0px;
+* {
+    margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
 
 
-body{
+body {
     box-sizing: border-box;
-    font-family: 'Roboto',sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 12px;
-    background-color: #ebebeb ;
+    background-color: #ebebeb;
 }
 
-p{
+p {
     font-size: 12px;
 }
 
-h3{
+h3 {
     font-size: 24px;
 }
 
 
 
-.titular{
+.titular {
     font-size: 24px;
     padding: 20px;
 }
 
-.textos{
+.textos {
     font-size: 16px;
 }
 
 
 
-.elementoLista{
+.elementoLista {
     text-decoration: none;
 }
 
 /*Fin Global*/
 
 
-
-
-
-
 /* Inicio  Header*/
 
-header{
+header {
     background-color: #eac926;
     padding: 20px;
-    display: flex;
-    flex-wrap: wrap;
-
-    
-
 }
 
 header p {
     margin-top: 10px;
-    
+
 }
 
 header nav {
     font-size: 12px;
-    margin-top: 10px ;
+    margin-top: 10px;
     display: none;
 }
 
 header ul {
-    margin-top: 10px ;
+    margin-top: 10px;
 }
 
-header ul li{
+header ul li {
     list-style-type: none;
 }
 
-header ul li a{
+header ul li a {
     text-decoration: none;
     color: black;
 }
 
 .barraBusqueda {
     text-align: center;
-   
+    display: flex;
+    align-items: center;
+    width: 50%;
+
 }
 
-.centrado{
+.top-header {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.centrado {
     text-align: center;
 }
 
 .hamburgesaHeader {
-    text-align:  center;
+    text-align: center;
 }
-.hamburgesaHeader i{
-    background-color:#1259c3;
+
+.hamburgesaHeader i {
+    background-color: #1259c3;
     color: white;
     border-radius: 5px;
     font-size: 20px;
@@ -101,6 +101,18 @@ header ul li a{
     padding: 10px;
 
 }
+
+.logo {
+    width: 50%;
+    padding: 10px;
+}
+
+
+.elementos-lista {
+    display: none;
+
+}
+
 
 /*Fin de Header*/
 
@@ -111,16 +123,14 @@ header ul li a{
 
 /* inicio MAIN*/
 
-main{
+main {
     margin: 0 auto;
     width: 90%;
-    
 
 }
 
 
-
-main section article{
+main section article {
     margin-top: 10px;
     margin: auto;
     padding: 10px;
@@ -129,28 +139,22 @@ main section article{
     align-items: baseline;
     position: relative;
     padding: 15px;
-    
+
 }
 
-.contenedorArticulo{   
+.contenedorArticulo {
     border-top: 1px solid #ebebeb;
     background-color: white;
     width: 100%;
-    display: flex;
+    /* display: flex; */
     height: 100px;
     flex-direction: column;
-    flex-wrap: wrap;
-   
+    position: relative;
 
-    
-    
-    
 }
 
 
-
-
-/* .camion{
+.camion {
     display: block;
     font-size: 16px;
     padding: 5px;
@@ -162,10 +166,10 @@ main section article{
     position: absolute;
     right: 20px;
     top: -15px;
+    color: #39b54a;
+}
 
-} */
-
-.camion{
+/* .camion{
     color:#39b54a;
     border-radius: 50%;
     border:solid 1px #39b54a;
@@ -173,30 +177,34 @@ main section article{
     height: 25px;
     padding: 5px;
     
-}
+} */
 
 
 
-.precios{
+.precios {
     font-size: 18px;
     text-align: left;
-    margin-top: 5px;
-    display: flex;
-    
+    margin-top: 15px;
+    width: 40px;
+    display: inline-block;
+
+
 }
 
-.textos{
-    display: flex;
+.textos {
     margin-bottom: 10px;
     font-size: 16px;
-    
+
+
 
 }
 
-.descuentos{
+.descuentos {
     color: #39b54a;
-    display: flex;
-    
+    width: 70px;
+    display: inline-block;
+    margin-left: 40px;
+
 }
 
 
@@ -209,46 +217,46 @@ main section article{
 
 
 /*Inicio footer*/
-footer p{
+footer p {
     text-align: center;
     padding: 10px;
 }
 
-footer h2{
+footer h2 {
     text-align: center;
     padding: 10px;
 }
 
-footer{
+footer {
     background-color: white;
     margin-top: 20px;
 }
 
 
-.fa-credit-card{
+.fa-credit-card {
     font-size: 2rem;
-    color:#1259c3 ;
+    color: #1259c3;
     text-align: center;
     margin-bottom: 10px;
 }
 
-.fa-gift{
+.fa-gift {
     font-size: 2rem;
-    color:#1259c3 ;
-    text-align: center;
-    margin-bottom: 10px;
-
-}
-
-.fa-user-shield{
-    font-size: 2rem;
-    color:#1259c3 ;
+    color: #1259c3;
     text-align: center;
     margin-bottom: 10px;
 
 }
 
-.centerFooter{
+.fa-user-shield {
+    font-size: 2rem;
+    color: #1259c3;
+    text-align: center;
+    margin-bottom: 10px;
+
+}
+
+.centerFooter {
     text-align: center;
 }
 
@@ -259,7 +267,7 @@ footer{
 
 /*-----------------Login html-----------------*/
 
-.formulario{
+.formulario {
     background-color: #ebebeb;
     display: flex;
     flex-direction: column;
@@ -271,27 +279,27 @@ footer{
 }
 
 
-.formulario input{
+.formulario input {
     display: block;
 }
 
-#CategoriaInteres{
+#CategoriaInteres {
     display: inline-block;
-   
+
 }
 
-#PerfilUsuario{
+#PerfilUsuario {
     display: inline-block;
 }
 
 
 /*----------------- CSS LOGIN----------------------------*/
 
-.login{
+.login {
     background-color: #ebebeb;
 }
 
-.login input{
+.login input {
     display: block;
 }
 
@@ -306,21 +314,100 @@ footer{
 
 
 
-@media (min-width: 361px){
+@media (min-width: 361px) {
     .textos {
         display: block;
     }
 
-main section article{
-    box-shadow: 0px 0px 10px rgb(100,100,100);
+    main section article {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    header nav {
+        display: block;
+    }
+
+    header nav {
+        display: block;
+    }
+
+
+    .hamburgesaHeader {
+        display: none;
+    }
+
+    main section div.productosASD {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    main section div.productosASD article {
+        width: 45%;
+    }
+
 }
 
-header nav{
-    display: block;
-}
+@media (min-width: 769px) {
+    main section div.productosASD article {
+        width: 25%;
+    }
 
-.hamburgesaHeader{
-    display: none;
-}
+    .descuentos {
+        width: 40%;
+        /* margin-top: 10px */
+    }
+
+    .elementos-lista {
+        display: flex
+    }
+
+    .header-769 {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .logo {
+        width: 50%;
+    }
+
+
+    .fa-search {
+        background-color: #ebebeb;
+        padding: 4px;
+    }
+
+
+    .centrado {
+        margin-top: 5px;
+        margin-right: 20px;
+    }
+
+    .elementos-lista{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .menu1 nav ul{
+        display: flex;
+        
+        
+    }
+
+    .menu1 nav ul li{
+        padding: 0px 5px;
+    }
+
+    .menu2 nav ul{
+        display: flex;
+    }
+
+    .menu2 nav ul li{
+        padding: 0px 5px;
+    }
+
+
 
 }
