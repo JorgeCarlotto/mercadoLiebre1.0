@@ -29,6 +29,8 @@ h3 {
 
 .textos {
     font-size: 16px;
+    opacity: 0%;
+    transition: opacity, 0.9s;
 }
 
 
@@ -110,6 +112,7 @@ header ul li a {
 
 .elementos-lista {
     display: none;
+    transition: display, 0.2;
 
 }
 
@@ -139,6 +142,7 @@ main section article {
     align-items: baseline;
     position: relative;
     padding: 15px;
+    
 
 }
 
@@ -146,7 +150,6 @@ main section article {
     border-top: 1px solid #ebebeb;
     background-color: white;
     width: 100%;
-    /* display: flex; */
     height: 100px;
     flex-direction: column;
     position: relative;
@@ -167,6 +170,7 @@ main section article {
     right: 20px;
     top: -15px;
     color: #39b54a;
+    transition: transform ,0.8s ;
 }
 
 /* .camion{
@@ -194,9 +198,7 @@ main section article {
 .textos {
     margin-bottom: 10px;
     font-size: 16px;
-
-
-
+    display: none;
 }
 
 .descuentos {
@@ -347,6 +349,14 @@ footer {
         width: 45%;
     }
 
+    .textos {
+        margin-bottom: 10px;
+        font-size: 16px;
+        display: inline-block;
+    }
+
+
+
 }
 
 @media (min-width: 769px) {
@@ -408,6 +418,96 @@ footer {
         padding: 0px 5px;
     }
 
-
+    .textos {
+        margin-bottom: 10px;
+        font-size: 16px;
+        display: inline-block;
+    }
 
 }
+
+@media (min-width: 1280px){
+
+    main section article:hover .textos{
+       opacity: 100%;
+   } 
+    
+   main section article{
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    transition: box-shadow , 0.2s;
+} 
+  
+
+    main section article:hover{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        
+    }
+
+    main section article:hover .camion{
+    transform: rotateZ(-90deg)
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+.elementos-footer{
+    margin-top: 10px;
+    display: flex;
+}
+
+.centerFooter{
+    margin-top: 20px;
+}
+
+.copyRight{
+    float: left;
+}
+
+
+.fa-credit-card {
+    font-size: 2rem;
+    color: #1259c3;
+    text-align: center;
+    margin-bottom: 10px;
+    transition: color, 0.5s;
+}
+
+.fa-gift {
+    font-size: 2rem;
+    color: #1259c3;
+    text-align: center;
+    margin-bottom: 10px;
+    transition: color, 0.5s;
+
+}
+
+.fa-user-shield {
+    font-size: 2rem;
+    color: #1259c3;
+    text-align: center;
+    margin-bottom: 10px;
+    transition: color, 0.5s;
+}
+
+.fa-credit-card:hover{
+    color: #39b54a;
+}
+
+.fa-gift:hover{
+    color: #39b54a;
+}
+
+.fa-user-shield:hover{
+    color: #39b54a;
+}
+
+
+} 
